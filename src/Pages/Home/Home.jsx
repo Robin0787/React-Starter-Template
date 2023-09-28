@@ -1,10 +1,26 @@
 
+import Banner from "../../Components/Banner/Banner";
+import Container from "../../Components/Container/Container";
+import Introduction from "../../Components/Introduction/Introduction";
+
 
 const Home = () => {
     return (
-        <div className='text-center h-[calc(100vh-60px)] flex justify-center items-center text-5xl font-thin'>
-            <h1>Home</h1>
-        </div>
+        <>
+            <Banner />
+            <section className="py-[100px] w-full">
+                <Container>
+                    <section className="w-full h-full flex flex-col lg:flex-row justify-between items-start gap-12">
+                        <section className="w-full lg:w-[67%]">
+                            <Introduction />
+                        </section>
+                        <section className="w-full lg:w-[33%] border h-[200px]">
+
+                        </section>
+                    </section>
+                </Container>
+            </section>
+        </>
     );
 };
 
